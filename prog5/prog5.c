@@ -22,15 +22,15 @@ void make_decision(union decision *d) {
 void print_decision(union decision d) {
     printf("\n--- Decision Narrative ---\n");
     if (d.decision == 1) {
-        printf("🚀 You are moving forward with this choice!\n");
+        printf("You are moving forward with this choice!\n");
         printf("You have the aptitude and the passion for it.\n");
         if (d.your_mothers_choice && d.your_fathers_choice) {
-            printf("👪 Plus, you have your family's full support!\n");
+            printf("Plus, you have your family's full support!\n");
         } else {
-            printf("⚠️ You are pursuing this path even though your parents have doubts.\n");
+            printf("You are pursuing this path even though your parents have doubts.\n");
         }
     } else {
-        printf("🛑 You decided not to go through with this.\n");
+        printf("You decided not to go through with this.\n");
         printf("Either the passion or the aptitude wasn't there.\n");
     }
 }
@@ -38,9 +38,9 @@ void print_decision(union decision d) {
 void print_conclusion_based_on_flags(union decision d) {
     printf("\n--- Final Conclusion (Score: %d) ---\n", d.flags);
     if (d.flags >= 128) {
-        printf("🏆 Verdict: SUCCESS. The final decision is a GO!\n");
+        printf("Verdict: SUCCESS. The final decision is a GO!\n");
     } else {
-        printf("❌ Verdict: REJECTED. The final decision is a NO-GO.\n");
+        printf("Verdict: REJECTED. The final decision is a NO-GO.\n");
     }
 }
 
